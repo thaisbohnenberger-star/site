@@ -6,6 +6,7 @@
 	<title>Playstation 2</title>
 
 <style>
+	/* RESPONSIVO PARA COMPUTADOR */
 	.cabecalho{
 		font-family: arial;
 		text-align: center;
@@ -83,58 +84,34 @@
 		margin: 0;
 		background-image: linear-gradient(0deg,black, #1E90FF);
 	}
-
-	/* BOTÕES MENU */
-	.menu-btn {
-		display: none;
-		width: 100%;
-		padding: 10px;
-		background: black;
-		color: white;
-		border: none;
-		font-size: 16px;
-	}
-
-	/* RESPONSIVO */
+	/* RESPONSIVO PARA CELULAR */
 	@media (max-width: 768px) {
 
-		.container {
-			flex-direction: column;
-		}
-
-		.menu-btn {
-			display: block;
-		}
-
-		.esquerda, .direita {
-			display: none;
-		}
-
-		.esquerda.ativo, .direita.ativo {
-			display: block;
-		}
-
-		.esquerda, .direita, .principal {
-			max-width: 100%;
-			width: 100%;
-			margin: 0;
-		}
-
-		.principal {
-			text-align: left;
-		}
-
-		.cabecalho {
-			font-size: 16px;
-			padding: 10px;
-		}
-
-		.rodape {
-			flex-direction: column;
-			text-align: center;
-			gap: 10px;
-		}
+	.container {
+		flex-direction: column;
 	}
+
+	.esquerda, .direita, .principal {
+		max-width: 100%;
+		width: 100%;
+		margin: 0;
+	}
+
+	.principal {
+		text-align: left;
+	}
+
+	.cabecalho {
+		font-size: 16px;
+		padding: 10px;
+	}
+
+	.rodape {
+		flex-direction: column;
+		text-align: center;
+		gap: 10px;
+	}
+}
 </style>
 </head>
 
@@ -144,10 +121,6 @@
 		<img src="imagens/logo_colorida.png" width="50px">
 		<strong>O playstation mais vendido de todos os tempos</strong>
 	</div>
-
-	<!-- BOTÕES (só aparecem no celular) -->
-	<button class="menu-btn" onclick="toggleMenu('esquerda')">☰ Jogos (Esquerda)</button>
-	<button class="menu-btn" onclick="toggleMenu('direita')">☰ Jogos (Direita)</button>
 
 	<div class="container">
 
@@ -172,16 +145,42 @@
 
 	<div class="principal">
 		<h2>Sua História</h2>
-		<p>O PlayStation 2 foi lançado em 2000 pela Sony...</p>
+		<p>O PlayStation 2 foi lançado em 2000 pela Sony como sucessor do PlayStation, trazendo mais potência e a novidade de reproduzir DVDs, o que ajudou a aumentar sua popularidade.
+		<br><br>
+
+		O console fez grande sucesso no mundo todo, com muitos jogos disponíveis e a possibilidade de rodar jogos do primeiro PlayStation, atraindo vários tipos de jogadores. Em 2004, ganhou uma versão mais compacta, o PS2 Slim, que manteve seu sucesso por mais tempo.
+		<br><br>
+
+		Ao longo dos anos, se tornou um dos consoles mais importantes da história, com mais de 160 milhões de unidades vendidas, marcando gerações de jogadores.
+		<br><br>
+		</p>
 
 		<h2>Inovações</h2>
-		<p>O PlayStation 2 possuía diversas características...</p>
+		<p>
+		O PlayStation 2 possuía diversas características que o tornaram muito popular na sua época. Ele contava com leitor de CDs e DVDs, gráficos mais avançados que o console anterior, controle DualShock 2 com vibração e sensibilidade, além de ser compatível com jogos do primeiro PlayStation. Também utilizava memory cards para salvar o progresso e tinha uma enorme variedade de jogos disponíveis.
+		<br><br>
+
+		Como inovação, o PlayStation 2 se destacou principalmente por funcionar também como reprodutor de DVD, algo moderno para a época e que fez muitas pessoas comprarem o console não só para jogar, mas também para assistir filmes. Além disso, ajudou a popularizar o videogame como uma central multimídia dentro de casa. Outra inovação foi o lançamento da versão Slim, mais compacta e leve, que contribuiu para manter o sucesso do console por mais tempo.
+		<br><br>
 
 		<h2>Sucesso Mundial</h2>
-		<p>O PlayStation 2 foi um enorme sucesso mundial...</p>
+		O PlayStation 2 foi um enorme sucesso mundial desde o seu lançamento. Desenvolvido pela Sony, o console conquistou jogadores de diferentes idades e países, tornando-se rapidamente um dos videogames mais populares da história.
+
+		Seu sucesso se deve a vários fatores, como a grande quantidade de jogos disponíveis, a qualidade dos gráficos para a época e o fato de também funcionar como reprodutor de DVD. Além disso, a compatibilidade com jogos do primeiro PlayStation ajudou a atrair ainda mais usuários.
+
+		Com o passar dos anos, o PS2 continuou vendendo muito bem, alcançando mais de 155 milhões de unidades vendidas, o que o tornou o console mais vendido da história. Seu impacto foi tão grande que marcou gerações e consolidou a Sony como uma das principais empresas da indústria dos videogames.
+		<br><br>
 
 		<h2>Legado</h2>
-		<p>O PlayStation 2 deixou um legado muito importante...</p>
+		O PlayStation 2 deixou um legado muito importante na história dos videogames. Ele se tornou o console mais vendido de todos os tempos, com mais de 160 milhões de unidades, mostrando seu enorme impacto mundial.
+
+		Seu sucesso ajudou a consolidar a Sony como uma das maiores empresas da indústria, além de influenciar o desenvolvimento de futuros consoles. O PS2 também marcou gerações de jogadores com sua grande variedade de jogos e experiências inesquecíveis.
+
+		Até hoje, ele é lembrado como um dos videogames mais importantes da história, sendo referência quando se fala em sucesso, inovação e popularidade.
+		<br><br>
+		<br><br>
+		<br><br>
+		<br><br>
 	</div>
 
 	<div class="direita">
@@ -190,12 +189,17 @@
 		<img src="imagens/bully.avif">
 		<p><b>Nome</b><br>Bully</p>
 		<p><b>Lançamento</b><br>17 de outubro de 2006</p>
+        <p><b>Cópias vendidas</b><br>Cerca de 1,5 milhão de cópias até 2008.</p>
 
 		<img src="imagens/mksm.webp">
 		<p><b>Nome</b><br>Mortal Kombat: Shaolin Monks</p>
+		<p><b>Lançamento</b><br>16 de setembro de 2005</p>
+        <p><b>Cópias vendidas</b><br>Cerca de 1 milhão de cópias até 2009.</p>
 
 		<img src="imagens/nfsmw.jpeg">
 		<p><b>Nome</b><br>Need for Speed: Most Wanted</p>
+		<p><b>Lançamento</b><br>15 de novembro de 2005</p>
+        <p><b>Cópias vendidas</b><br>Cerca de 16 milhões de cópias até 2013.</p>
 	</div>
 
 	</div>
@@ -207,13 +211,6 @@
 			<img src="imagens/gmail.png" width="20px"> thaisbonhen@gmail.com
 		</p>
 	</div>
-
-	<script>
-	function toggleMenu(classe) {
-		const menu = document.querySelector("." + classe);
-		menu.classList.toggle("ativo");
-	}
-	</script>
 
 </body>
 </html>
