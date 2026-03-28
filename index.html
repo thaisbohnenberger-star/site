@@ -6,6 +6,7 @@
 	<title>Playstation 2</title>
 
 <style>
+	/* RESPONSIVO PARA COMPUTADOR */
 	.cabecalho{
 		font-family: arial;
 		text-align: center;
@@ -83,6 +84,34 @@
 		margin: 0;
 		background-image: linear-gradient(0deg,black, #1E90FF);
 	}
+	/* RESPONSIVO PARA CELULAR */
+	@media (max-width: 768px) {
+
+	.container {
+		flex-direction: column;
+	}
+
+	.esquerda, .direita, .principal {
+		max-width: 100%;
+		width: 100%;
+		margin: 0;
+	}
+
+	.principal {
+		text-align: left;
+	}
+
+	.cabecalho {
+		font-size: 16px;
+		padding: 10px;
+	}
+
+	.rodape {
+		flex-direction: column;
+		text-align: center;
+		gap: 10px;
+	}
+}
 </style>
 </head>
 
